@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 340" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif">
+  <defs>
+    <marker id="loopArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#028090"/>
+    </marker>
+  </defs>
+
+  <!-- 中央のサイクル -->
+  <!-- 触ってみる (top) -->
+  <rect x="150" y="16" width="180" height="56" rx="28" fill="#028090"/>
+  <text x="240" y="50" text-anchor="middle" font-size="16" font-weight="700" fill="white">触ってみる</text>
+
+  <!-- Arrow: top → right -->
+  <path d="M 336 44 Q 390 44 390 100" fill="none" stroke="#028090" stroke-width="2.5" marker-end="url(#loopArrow)"/>
+
+  <!-- 「ここが違うな」(right) -->
+  <rect x="310" y="106" width="160" height="56" rx="28" fill="#00A896"/>
+  <text x="390" y="140" text-anchor="middle" font-size="15" font-weight="700" fill="white">「ここが違うな」</text>
+
+  <!-- Arrow: right → bottom -->
+  <path d="M 390 168 Q 390 220 330 220" fill="none" stroke="#00A896" stroke-width="2.5" marker-end="url(#loopArrow)"/>
+
+  <!-- AIに伝える (bottom) -->
+  <rect x="150" y="192" width="180" height="56" rx="28" fill="#02C39A"/>
+  <text x="240" y="226" text-anchor="middle" font-size="16" font-weight="700" fill="white">AIに「直して」</text>
+
+  <!-- Arrow: bottom → left -->
+  <path d="M 144 220 Q 90 220 90 168" fill="none" stroke="#02C39A" stroke-width="2.5" marker-end="url(#loopArrow)"/>
+
+  <!-- AIが修正 (left) -->
+  <rect x="10" y="106" width="160" height="56" rx="28" fill="#028090"/>
+  <text x="90" y="140" text-anchor="middle" font-size="16" font-weight="700" fill="white">AIが修正する</text>
+
+  <!-- Arrow: left → top -->
+  <path d="M 90 100 Q 90 44 144 44" fill="none" stroke="#028090" stroke-width="2.5" marker-end="url(#loopArrow)"/>
+
+  <!-- 中央テキスト -->
+  <text x="240" y="130" text-anchor="middle" font-size="14" font-weight="700" fill="#028090">何度でも</text>
+  <text x="240" y="148" text-anchor="middle" font-size="14" font-weight="700" fill="#028090">繰り返せる</text>
+
+  <!-- 下のメッセージ -->
+  <rect x="80" y="280" width="320" height="44" rx="10" fill="#f0fdf9" stroke="#028090" stroke-width="1.5"/>
+  <text x="240" y="308" text-anchor="middle" font-size="14" fill="#028090" font-weight="600">遠慮なく何度でもOK。AIは嫌な顔をしません</text>
+</svg>

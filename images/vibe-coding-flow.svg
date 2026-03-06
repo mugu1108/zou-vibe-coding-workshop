@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 280" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif">
+  <defs>
+    <marker id="flowArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#028090"/>
+    </marker>
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#028090"/>
+      <stop offset="100%" stop-color="#02C39A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Step 1 -->
+  <rect x="10" y="40" width="160" height="180" rx="14" fill="#f9fafb" stroke="#028090" stroke-width="2"/>
+  <circle cx="90" cy="76" r="22" fill="#028090"/>
+  <text x="90" y="83" text-anchor="middle" font-size="20" font-weight="800" fill="white">1</text>
+  <text x="90" y="116" text-anchor="middle" font-size="16" font-weight="700" fill="#1f2937">困りごとを</text>
+  <text x="90" y="138" text-anchor="middle" font-size="16" font-weight="700" fill="#1f2937">言葉にする</text>
+  <text x="90" y="172" text-anchor="middle" font-size="13" fill="#6b7280">「日報入力が</text>
+  <text x="90" y="190" text-anchor="middle" font-size="13" fill="#6b7280">大変...」</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="176" y1="130" x2="206" y2="130" stroke="#028090" stroke-width="2.5" marker-end="url(#flowArrow)"/>
+
+  <!-- Step 2 -->
+  <rect x="212" y="40" width="160" height="180" rx="14" fill="#f9fafb" stroke="#00A896" stroke-width="2"/>
+  <circle cx="292" cy="76" r="22" fill="#00A896"/>
+  <text x="292" y="83" text-anchor="middle" font-size="20" font-weight="800" fill="white">2</text>
+  <text x="292" y="116" text-anchor="middle" font-size="16" font-weight="700" fill="#1f2937">AIに</text>
+  <text x="292" y="138" text-anchor="middle" font-size="16" font-weight="700" fill="#1f2937">伝える</text>
+  <text x="292" y="172" text-anchor="middle" font-size="13" fill="#6b7280">「こんなツール</text>
+  <text x="292" y="190" text-anchor="middle" font-size="13" fill="#6b7280">作りたい」</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="378" y1="130" x2="408" y2="130" stroke="#00A896" stroke-width="2.5" marker-end="url(#flowArrow)"/>
+
+  <!-- Step 3 -->
+  <rect x="414" y="40" width="160" height="180" rx="14" fill="#f9fafb" stroke="#02C39A" stroke-width="2"/>
+  <circle cx="494" cy="76" r="22" fill="#02C39A"/>
+  <text x="494" y="83" text-anchor="middle" font-size="20" font-weight="800" fill="white">3</text>
+  <text x="494" y="116" text-anchor="middle" font-size="16" font-weight="700" fill="#1f2937">AIが</text>
+  <text x="494" y="138" text-anchor="middle" font-size="16" font-weight="700" fill="#1f2937">作ってくれる</text>
+  <text x="494" y="172" text-anchor="middle" font-size="13" fill="#6b7280">数分で最初の</text>
+  <text x="494" y="190" text-anchor="middle" font-size="13" fill="#6b7280">バージョン完成</text>
+
+  <!-- Arrow 3→4 -->
+  <line x1="580" y1="130" x2="610" y2="130" stroke="#02C39A" stroke-width="2.5" marker-end="url(#flowArrow)"/>
+
+  <!-- Step 4 -->
+  <rect x="616" y="40" width="170" height="180" rx="14" fill="#028090"/>
+  <circle cx="701" cy="76" r="22" fill="white"/>
+  <text x="701" y="83" text-anchor="middle" font-size="20" font-weight="800" fill="#028090">4</text>
+  <text x="701" y="116" text-anchor="middle" font-size="16" font-weight="700" fill="white">直してもらう</text>
+  <text x="701" y="138" text-anchor="middle" font-size="16" font-weight="700" fill="white">を繰り返す</text>
+  <text x="701" y="172" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.8)">「ここ変えて」</text>
+  <text x="701" y="190" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.8)">で改善</text>
+
+  <!-- Loop arrow from Step 4 back to Step 3 -->
+  <path d="M 701 226 L 701 254 Q 701 264 691 264 L 504 264 Q 494 264 494 254 L 494 226"
+        fill="none" stroke="#028090" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#flowArrow)"/>
+  <text x="598" y="260" text-anchor="middle" font-size="12" fill="#028090" font-weight="600">繰り返し改善</text>
+</svg>
