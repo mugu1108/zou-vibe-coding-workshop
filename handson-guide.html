@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>バイブコーディング体験ガイド</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+      background-color: #f9fafb;
+      color: #374151;
+      line-height: 1.8;
+    }
+
+    /* ヘッダー */
+    .header {
+      background: linear-gradient(135deg, #028090 0%, #00A896 50%, #02C39A 100%);
+      color: white;
+      padding: 48px 24px;
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 32px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .header p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    /* メインコンテンツ */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 32px 20px 80px;
+    }
+
+    /* セクション */
+    .section {
+      background: white;
+      border-radius: 16px;
+      padding: 32px 28px;
+      margin-bottom: 24px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+    .section h2 {
+      font-size: 24px;
+      font-weight: 800;
+      color: #1f2937;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 3px solid #028090;
+    }
+    .section h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #028090;
+      margin-top: 24px;
+      margin-bottom: 12px;
+    }
+    .section p {
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+
+    /* ステップ番号 */
+    .step-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      background: #028090;
+      color: white;
+      border-radius: 50%;
+      font-size: 18px;
+      font-weight: 800;
+      margin-right: 12px;
+      flex-shrink: 0;
+    }
+    .step-title {
+      display: flex;
+      align-items: center;
+      font-size: 22px;
+      font-weight: 800;
+      color: #1f2937;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 3px solid #028090;
+    }
+
+    /* リンクボタン */
+    .link-button {
+      display: block;
+      background: #028090;
+      color: white;
+      text-align: center;
+      padding: 16px 24px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 700;
+      margin: 20px 0;
+      transition: background 0.2s;
+    }
+    .link-button:hover {
+      background: #026d7a;
+    }
+
+    /* 情報カード */
+    .info-card {
+      background: #f0fdf9;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 16px 0;
+      border-left: 4px solid #028090;
+    }
+    .info-card p {
+      margin-bottom: 8px;
+    }
+    .info-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* 注意カード */
+    .warning-card {
+      background: #fef2f2;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 16px 0;
+      border-left: 4px solid #991b1b;
+    }
+
+    /* プロンプトボックス */
+    .prompt-box {
+      background: #1f2937;
+      color: #e5e7eb;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 16px 0;
+      font-size: 15px;
+      line-height: 1.7;
+      position: relative;
+    }
+    .prompt-box .label {
+      display: inline-block;
+      background: #028090;
+      color: white;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 2px 10px;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+    .prompt-box .copy-btn {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: #374151;
+      color: #e5e7eb;
+      border: 1px solid #4b5563;
+      border-radius: 6px;
+      padding: 6px 14px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .prompt-box .copy-btn:hover {
+      background: #4b5563;
+    }
+    .prompt-box .copy-btn.copied {
+      background: #028090;
+      border-color: #028090;
+      color: white;
+    }
+
+    /* 画像プレースホルダー */
+    .screenshot {
+      background: #e5e7eb;
+      border-radius: 12px;
+      padding: 40px 24px;
+      margin: 16px 0;
+      text-align: center;
+      color: #9ca3af;
+      font-size: 14px;
+      border: 2px dashed #d1d5db;
+    }
+
+    /* リスト */
+    .section ul, .section ol {
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .section li {
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+
+    /* フッター */
+    .footer {
+      text-align: center;
+      padding: 24px;
+      color: #9ca3af;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <div class="header">
+    <h1>バイブコーディング体験ガイド</h1>
+    <p>Google AI Studio を使って、TODOアプリを作ってみよう</p>
+  </div>
+
+  <div class="container">
+
+    <!-- 今日作るもの -->
+    <div class="section">
+      <h2>今日作るもの</h2>
+      <p>TODOアプリを作成。AIに話しかけながら、少しずつ機能を追加していきます。</p>
+
+      <h3>完成イメージ</h3>
+      <ul>
+        <li>タスクの一覧が表示される</li>
+        <li>タスクの追加・削除・完了チェックができる</li>
+        <li>期限を設定して、期限が近いものを目立たせる</li>
+        <li>さらに自分のアイデアで機能を追加</li>
+      </ul>
+
+      <div class="info-card">
+        <p><strong>所要時間：</strong> 約20分</p>
+      </div>
+    </div>
+
+    <!-- Google AI Studio とは -->
+    <div class="section">
+      <h2>Google AI Studio とは</h2>
+      <p>Google AI Studio は、Googleが提供するAI開発プラットフォームです。ブラウザ上でAI（Gemini）と会話しながら、アプリを作ることができます。</p>
+
+      <div class="info-card">
+        <p><strong>今日使うのはこの機能：</strong></p>
+        <p>日本語で「こんなアプリを作って」と伝えるだけで、AIが実際に動くWebアプリを生成してくれます。プログラミングの知識は不要です。</p>
+      </div>
+
+      <img src="images/share_ais_03.png" style="width: 100%; border-radius: 12px; margin: 16px 0;">
+
+      <a href="https://aistudio.google.com/" target="_blank" class="link-button">Google AI Studio を開く</a>
+
+      <div class="info-card">
+        <p><strong>事前準備：</strong></p>
+        <ul>
+          <li>Googleアカウントでログインしてください</li>
+          <li>PC のブラウザ（Chrome推奨）で開いてください</li>
+        </ul>
+      </div>
+
+      <h3>初めて開く方はこちらの画面が表示されます</h3>
+      <img src="images/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202026-03-27%2011.10.44.png" style="width: 100%; border-radius: 12px; margin: 16px 0; border: 1px solid #e5e7eb;">
+
+      <div class="info-card">
+        <p><strong>チェックボックスについて：</strong></p>
+        <ul>
+          <li><strong>1つ目（利用規約）</strong> — 必ずチェックを入れてください</li>
+          <li><strong>2つ目（最新情報のメール受信）</strong> — 受け取りたい方のみ✔︎を入れてください</li>
+        </ul>
+        <p>チェックを入れたら「Continue」を押して進んでください。</p>
+      </div>
+
+      <h3>ホーム画面</h3>
+      <img src="images/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202026-03-26%2018.29.59.png" style="width: 100%; border-radius: 12px; margin: 16px 0; border: 1px solid #e5e7eb;">
+    </div>
+
+    <!-- Buildモード選択 -->
+    <div class="section">
+      <h2>「Build」モードを選択する</h2>
+      <p>画面の中から「Build」を選択してください。このモードでアプリを作ることができます。</p>
+      <img src="images/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202026-03-26%2018.36.11.png" style="width: 100%; border-radius: 12px; margin: 16px 0; border: 1px solid #e5e7eb;">
+    </div>
+
+    <!-- Buildモード画面 -->
+    <div class="section">
+      <h2>Buildモードの画面</h2>
+      <p>Buildモードに移ると、このような画面が表示されます。<br>下部の入力欄にプロンプトを入力してアプリを作っていきます。</p>
+      <img src="images/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202026-03-26%2018.52.27.png" style="width: 100%; border-radius: 12px; margin: 16px 0; border: 1px solid #e5e7eb;">
+
+      <div class="info-card">
+        <p><strong>活用する上での豆知識</strong></p>
+        <ul>
+          <li>ボイスモードで音声入力もOK</li>
+          <li>画像やファイルを添付して「これを参考に作って」と伝えることも可能</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Step 1 -->
+    <div class="section">
+      <div class="step-title">
+        <span class="step-number">1</span>
+        TODOアプリを作ってみよう
+      </div>
+      <p>入力欄に以下のプロンプトをそのまま入力して、送信してください。</p>
+
+      <div class="prompt-box">
+        <span class="label">プロンプト</span>
+        <button class="copy-btn" onclick="copyPrompt(this)">コピー</button>
+        <div class="prompt-text">TODOアプリを作って</div>
+      </div>
+
+      <p>しばらく待つと、AIがTODOアプリを生成してくれます。右側のプレビュー画面に実際に動くアプリが表示されます。</p>
+
+      <div class="info-card" style="background: #f9fafb; border-left-color: #d1d5db;">
+        <p><strong>💡 プロンプトのコツ</strong></p>
+        <ul>
+          <li><strong>具体的に伝える</strong> — 「いい感じにして」より「背景を青にして、ボタンを大きくして」</li>
+          <li><strong>一度に全部求めない</strong> — まず基本を作って、そこから少しずつ改良</li>
+          <li><strong>遠慮しない</strong> — 何回やり直しても大丈夫。AIは疲れません</li>
+        </ul>
+      </div>
+
+      <img src="images/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202026-03-26%2019.08.08.png" style="width: 100%; border-radius: 12px; margin: 16px 0; border: 1px solid #e5e7eb;">
+
+      <div class="info-card">
+        <p><strong>一つのプロンプトで、Todoアプリのモックが完成。</strong></p>
+        <p>実際に触ってみて、タスクを追加してみてください。</p>
+      </div>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="section">
+      <div class="step-title">
+        <span class="step-number">2</span>
+        機能を追加してみよう
+      </div>
+      <p>Step 1 でTODOアプリの見た目を作ることができました。ここからは、追加で機能を加えていきましょう。</p>
+      <p>新しい機能を追加したい場合は、画面左下のチャット欄にプロンプトを入力して送信します。</p>
+
+      <img src="images/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202026-03-27%2012.06.03.png" style="width: 100%; border-radius: 12px; margin: 16px 0; border: 1px solid #e5e7eb;">
+
+      <p>以下のプロンプトを送ってみましょう。</p>
+
+      <div class="prompt-box">
+        <span class="label">プロンプト</span>
+        <button class="copy-btn" onclick="copyPrompt(this)">コピー</button>
+        <div class="prompt-text">タスクの完了チェックと削除ができるようにして</div>
+      </div>
+
+      <div class="info-card">
+        <p><strong>これがバイブコーディングです。</strong></p>
+        <p>足りない機能を日本語で伝えるだけで、AIが追加してくれます。</p>
+      </div>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="section">
+      <div class="step-title">
+        <span class="step-number">3</span>
+        さらに便利にしてみよう
+      </div>
+      <p>ここまでで基本的なTODOアプリが完成しました。次は、もう少し便利な機能を追加してみましょう。</p>
+
+      <div class="prompt-box">
+        <span class="label">プロンプト</span>
+        <button class="copy-btn" onclick="copyPrompt(this)">コピー</button>
+        <div class="prompt-text">タスクに期限を設定できるようにして、期限が近いものは色を変えて目立たせて。既存のタスクにも反映してね</div>
+      </div>
+
+      <img src="images/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202026-03-27%2011.50.39.png" style="width: 100%; border-radius: 12px; margin: 16px 0; border: 1px solid #e5e7eb;">
+
+      <div class="info-card">
+        <p><strong>1つのプロンプトで複数のお願いもできます。</strong></p>
+        <p>「期限の設定」と「色で目立たせる」を新機能として同時に伝えつつ、既に追加済みのタスクにも反映するよう依頼しています。</p>
+      </div>
+    </div>
+
+    <!-- 完成 -->
+    <div class="section" style="text-align: center; background: #f0fdf9; border: 2px solid #028090;">
+      <p style="font-size: 22px; font-weight: 800; color: #028090; margin-bottom: 8px;">ここまでで基本のTODOアプリは完成です！</p>
+      <p style="font-size: 16px; color: #374151;">3つのプロンプトだけで、機能的なアプリが出来上がりました。</p>
+    </div>
+
+    <!-- 自由時間 -->
+    <div class="section">
+      <h2>自由に試してみよう</h2>
+      <p>ここからは自由時間です。自分のアイデアでアプリをカスタマイズしてみましょう。プロンプト例を参考にしてください。</p>
+
+      <div class="prompt-box">
+        <span class="label">プロンプト例 1</span>
+        <button class="copy-btn" onclick="copyPrompt(this)">コピー</button>
+        <div class="prompt-text">タスクをカテゴリ分けできるようにして（仕事、プライベート、買い物など）</div>
+      </div>
+
+      <div class="prompt-box">
+        <span class="label">プロンプト例 2</span>
+        <button class="copy-btn" onclick="copyPrompt(this)">コピー</button>
+        <div class="prompt-text">ダークモードに切り替えられるようにして</div>
+      </div>
+
+      <div class="prompt-box">
+        <span class="label">プロンプト例 3</span>
+        <button class="copy-btn" onclick="copyPrompt(this)">コピー</button>
+        <div class="prompt-text">タスクをドラッグ&ドロップで並び替えられるようにして</div>
+      </div>
+
+      <div class="info-card">
+        <p><strong>思いついたことを何でも伝えてみてください。</strong></p>
+        <p>うまくいかなくても大丈夫。「やっぱり元に戻して」もできます。</p>
+      </div>
+    </div>
+
+    <!-- Focus Mode -->
+    <div class="section" style="border: 1px solid #e5e7eb;">
+      <h2 style="border-bottom-color: #d1d5db; color: #6b7280;">おまけ：Focus Mode</h2>
+      <p>Focus Mode を使うと、プレビュー画面上の要素を直接クリックして、テキストの太字・色変更・フォントサイズなどをプロンプトなしで操作できます。WordやPowerPointのように直感的に見た目を調整できる機能です。</p>
+
+      <img src="images/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202026-03-27%2012.21.30.png" style="width: 100%; border-radius: 12px; margin: 16px 0; border: 1px solid #e5e7eb;">
+
+      <p>プロンプト入力欄の左にある矢印ボタンから切り替えられます。</p>
+      
+      <img src="images/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202026-03-27%2012.23.33.png" style="width: 100%; border-radius: 12px; margin: 16px 0; border: 1px solid #e5e7eb;">
+
+      <div class="info-card" style="background: #f9fafb; border-left-color: #d1d5db;">
+        <p><strong>例えばこんな操作ができます：</strong></p>
+        <ul>
+          <li>テキストをクリックして太字にする</li>
+          <li>文字色や背景色を変更する</li>
+          <li>フォントサイズを調整する</li>
+        </ul>
+      </div>
+
+      <p style="color: #9ca3af; font-size: 14px;">※ 時間に余裕があればぜひ試してみてください</p>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <p>&copy; C-table Inc.</p>
+  </div>
+
+  <script>
+    function copyPrompt(btn) {
+      const text = btn.parentElement.querySelector('.prompt-text').textContent.trim();
+      navigator.clipboard.writeText(text).then(() => {
+        btn.textContent = 'コピーしました';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.textContent = 'コピー';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+
+</body>
+</html>

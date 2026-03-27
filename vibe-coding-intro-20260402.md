@@ -70,7 +70,41 @@ _color: #fff
 
 <p style="font-size: 20px; color: #6b7280; margin-bottom: 12px;">今は、こんな時代になっています</p>
 
-<img src="images/compare-traditional-vs-vibe.svg" style="width: 100%; max-height: 420px; object-fit: contain;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 340" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" style="width: 100%; max-height: 420px;">
+  <rect x="20" y="20" width="360" height="300" rx="16" fill="#f9fafb" stroke="#e5e7eb" stroke-width="2"/>
+  <text x="200" y="56" text-anchor="middle" font-size="18" font-weight="700" fill="#991b1b">従来の開発</text>
+  <rect x="50" y="76" width="300" height="44" rx="8" fill="#fef2f2"/>
+  <text x="200" y="104" text-anchor="middle" font-size="15" fill="#374151">要件をまとめる（数週間）</text>
+  <line x1="200" y1="120" x2="200" y2="130" stroke="#d1d5db" stroke-width="2"/>
+  <polygon points="200,136 194,126 206,126" fill="#d1d5db"/>
+  <rect x="50" y="136" width="300" height="44" rx="8" fill="#fef2f2"/>
+  <text x="200" y="164" text-anchor="middle" font-size="15" fill="#374151">エンジニアに依頼（数十万〜）</text>
+  <line x1="200" y1="180" x2="200" y2="190" stroke="#d1d5db" stroke-width="2"/>
+  <polygon points="200,196 194,186 206,186" fill="#d1d5db"/>
+  <rect x="50" y="196" width="300" height="44" rx="8" fill="#fef2f2"/>
+  <text x="200" y="224" text-anchor="middle" font-size="15" fill="#374151">開発を待つ（数ヶ月）</text>
+  <line x1="200" y1="240" x2="200" y2="250" stroke="#d1d5db" stroke-width="2"/>
+  <polygon points="200,256 194,246 206,246" fill="#d1d5db"/>
+  <rect x="50" y="256" width="300" height="44" rx="8" fill="#fef2f2"/>
+  <text x="200" y="284" text-anchor="middle" font-size="15" fill="#374151">やっと完成</text>
+  <rect x="420" y="20" width="360" height="300" rx="16" fill="#f0fdf9" stroke="#028090" stroke-width="2"/>
+  <text x="600" y="56" text-anchor="middle" font-size="18" font-weight="700" fill="#028090">バイブコーディング</text>
+  <rect x="450" y="76" width="300" height="44" rx="8" fill="white" stroke="#028090" stroke-width="1.5"/>
+  <text x="600" y="104" text-anchor="middle" font-size="15" fill="#374151" font-weight="600">困りごとを言葉にする</text>
+  <line x1="600" y1="120" x2="600" y2="130" stroke="#028090" stroke-width="2"/>
+  <polygon points="600,136 594,126 606,126" fill="#028090"/>
+  <rect x="450" y="136" width="300" height="44" rx="8" fill="white" stroke="#00A896" stroke-width="1.5"/>
+  <text x="600" y="164" text-anchor="middle" font-size="15" fill="#374151" font-weight="600">AIに「作って」と伝える</text>
+  <line x1="600" y1="180" x2="600" y2="190" stroke="#00A896" stroke-width="2"/>
+  <polygon points="600,196 594,186 606,186" fill="#00A896"/>
+  <rect x="450" y="196" width="300" height="44" rx="8" fill="white" stroke="#02C39A" stroke-width="1.5"/>
+  <text x="600" y="224" text-anchor="middle" font-size="15" fill="#374151" font-weight="600">数分で動くものが完成</text>
+  <line x1="600" y1="240" x2="600" y2="250" stroke="#02C39A" stroke-width="2"/>
+  <polygon points="600,256 594,246 606,246" fill="#02C39A"/>
+  <rect x="450" y="256" width="300" height="44" rx="8" fill="#028090"/>
+  <text x="600" y="284" text-anchor="middle" font-size="15" fill="white" font-weight="700">「直して」で改善を繰り返す</text>
+  <text x="400" y="180" text-anchor="middle" font-size="28" fill="#028090">→</text>
+</svg>
 
 ---
 
@@ -126,7 +160,45 @@ _color: #fff
 
 <p style="font-size: 20px; color: #6b7280; margin-bottom: 8px;">4つのステップで、アイデアが動くツールになる</p>
 
-<img src="images/vibe-coding-flow.svg" style="width: 100%; max-height: 360px; object-fit: contain;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 280" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" style="width: 100%; max-height: 360px;">
+  <rect x="10" y="40" width="160" height="180" rx="14" fill="#f9fafb" stroke="#028090" stroke-width="2"/>
+  <circle cx="90" cy="76" r="22" fill="#028090"/>
+  <text x="90" y="83" text-anchor="middle" font-size="20" font-weight="800" fill="white">1</text>
+  <text x="90" y="116" text-anchor="middle" font-size="16" font-weight="700" fill="#1f2937">困りごとを</text>
+  <text x="90" y="138" text-anchor="middle" font-size="16" font-weight="700" fill="#1f2937">言葉にする</text>
+  <text x="90" y="172" text-anchor="middle" font-size="13" fill="#6b7280">「日報入力が</text>
+  <text x="90" y="190" text-anchor="middle" font-size="13" fill="#6b7280">大変...」</text>
+  <line x1="176" y1="130" x2="200" y2="130" stroke="#028090" stroke-width="2.5"/>
+  <polygon points="206,130 196,124 196,136" fill="#028090"/>
+  <rect x="212" y="40" width="160" height="180" rx="14" fill="#f9fafb" stroke="#00A896" stroke-width="2"/>
+  <circle cx="292" cy="76" r="22" fill="#00A896"/>
+  <text x="292" y="83" text-anchor="middle" font-size="20" font-weight="800" fill="white">2</text>
+  <text x="292" y="116" text-anchor="middle" font-size="16" font-weight="700" fill="#1f2937">AIに</text>
+  <text x="292" y="138" text-anchor="middle" font-size="16" font-weight="700" fill="#1f2937">伝える</text>
+  <text x="292" y="172" text-anchor="middle" font-size="13" fill="#6b7280">「こんなツール</text>
+  <text x="292" y="190" text-anchor="middle" font-size="13" fill="#6b7280">作りたい」</text>
+  <line x1="378" y1="130" x2="402" y2="130" stroke="#00A896" stroke-width="2.5"/>
+  <polygon points="408,130 398,124 398,136" fill="#00A896"/>
+  <rect x="414" y="40" width="160" height="180" rx="14" fill="#f9fafb" stroke="#02C39A" stroke-width="2"/>
+  <circle cx="494" cy="76" r="22" fill="#02C39A"/>
+  <text x="494" y="83" text-anchor="middle" font-size="20" font-weight="800" fill="white">3</text>
+  <text x="494" y="116" text-anchor="middle" font-size="16" font-weight="700" fill="#1f2937">AIが</text>
+  <text x="494" y="138" text-anchor="middle" font-size="16" font-weight="700" fill="#1f2937">作ってくれる</text>
+  <text x="494" y="172" text-anchor="middle" font-size="13" fill="#6b7280">数分で最初の</text>
+  <text x="494" y="190" text-anchor="middle" font-size="13" fill="#6b7280">バージョン完成</text>
+  <line x1="580" y1="130" x2="604" y2="130" stroke="#02C39A" stroke-width="2.5"/>
+  <polygon points="610,130 600,124 600,136" fill="#02C39A"/>
+  <rect x="616" y="40" width="170" height="180" rx="14" fill="#028090"/>
+  <circle cx="701" cy="76" r="22" fill="white"/>
+  <text x="701" y="83" text-anchor="middle" font-size="20" font-weight="800" fill="#028090">4</text>
+  <text x="701" y="116" text-anchor="middle" font-size="16" font-weight="700" fill="white">直してもらう</text>
+  <text x="701" y="138" text-anchor="middle" font-size="16" font-weight="700" fill="white">を繰り返す</text>
+  <text x="701" y="172" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.8)">「ここ変えて」</text>
+  <text x="701" y="190" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.8)">で改善</text>
+  <path d="M 701 226 L 701 254 Q 701 264 691 264 L 504 264 Q 494 264 494 254 L 494 232" fill="none" stroke="#028090" stroke-width="2" stroke-dasharray="6,4"/>
+  <polygon points="494,226 488,236 500,236" fill="#028090"/>
+  <text x="598" y="260" text-anchor="middle" font-size="12" fill="#028090" font-weight="600">繰り返し改善</text>
+</svg>
 
 <div style="background: #f0fdf9; border-radius: 12px; padding: 14px 20px; margin-top: 12px; text-align: center;">
   <p style="font-size: 19px; color: #028090; font-weight: 600;">美容室で「もう少し短く」「前髪はこのくらい」と伝えながら仕上げるのと同じ感覚</p>
@@ -290,7 +362,28 @@ _color: #fff
 <p style="font-size: 20px; color: #6b7280; margin-bottom: 8px;">一発で完璧にはならない。でも「直して」と言えば何度でも直してくれる</p>
 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: center;">
-  <img src="images/iteration-loop.svg" style="width: 100%; max-height: 380px; object-fit: contain;">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 340" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" style="width: 100%; max-height: 380px;">
+    <rect x="150" y="16" width="180" height="56" rx="28" fill="#028090"/>
+    <text x="240" y="50" text-anchor="middle" font-size="16" font-weight="700" fill="white">触ってみる</text>
+    <path d="M 336 44 Q 390 44 390 94" fill="none" stroke="#028090" stroke-width="2.5"/>
+    <polygon points="390,100 384,90 396,90" fill="#028090"/>
+    <rect x="310" y="106" width="160" height="56" rx="28" fill="#00A896"/>
+    <text x="390" y="140" text-anchor="middle" font-size="15" font-weight="700" fill="white">「ここが違うな」</text>
+    <path d="M 390 168 Q 390 220 336 220" fill="none" stroke="#00A896" stroke-width="2.5"/>
+    <polygon points="330,220 340,214 340,226" fill="#00A896"/>
+    <rect x="150" y="192" width="180" height="56" rx="28" fill="#02C39A"/>
+    <text x="240" y="226" text-anchor="middle" font-size="16" font-weight="700" fill="white">AIに「直して」</text>
+    <path d="M 144 220 Q 90 220 90 174" fill="none" stroke="#02C39A" stroke-width="2.5"/>
+    <polygon points="90,168 84,178 96,178" fill="#02C39A"/>
+    <rect x="10" y="106" width="160" height="56" rx="28" fill="#028090"/>
+    <text x="90" y="140" text-anchor="middle" font-size="16" font-weight="700" fill="white">AIが修正する</text>
+    <path d="M 90 100 Q 90 44 138 44" fill="none" stroke="#028090" stroke-width="2.5"/>
+    <polygon points="144,44 134,38 134,50" fill="#028090"/>
+    <text x="240" y="130" text-anchor="middle" font-size="14" font-weight="700" fill="#028090">何度でも</text>
+    <text x="240" y="148" text-anchor="middle" font-size="14" font-weight="700" fill="#028090">繰り返せる</text>
+    <rect x="80" y="280" width="320" height="44" rx="10" fill="#f0fdf9" stroke="#028090" stroke-width="1.5"/>
+    <text x="240" y="308" text-anchor="middle" font-size="14" fill="#028090" font-weight="600">遠慮なく何度でもOK。AIは嫌な顔をしません</text>
+  </svg>
   <div>
     <p style="font-size: 16px; color: #028090; font-weight: 700; letter-spacing: 1px; margin-bottom: 12px;">こんなふうに伝えるだけ</p>
     <div style="display: flex; flex-direction: column; gap: 10px;">
@@ -441,7 +534,5 @@ _color: #fff
 # では実際に体験してみましょう
 
 <p style="font-size: 24px; opacity: 0.9; margin-top: 24px;">矢野さんの営業報告アプリデモの後、<br>皆さん自身でバイブコーディングを体験します</p>
-
-<p style="font-size: 20px; opacity: 0.7; margin-top: 32px;">まずは矢野さんのデモをどうぞ</p>
 
 </div>
