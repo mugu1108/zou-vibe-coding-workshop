@@ -37,7 +37,7 @@ _color: #fff
 
 <p style="font-size: 28px; opacity: 0.9; margin-top: 24px;">バイブコーディング体験ワークショップ</p>
 
-<p style="font-size: 20px; opacity: 0.7; margin-top: 40px;">2026年4月2日 ｜ ZOUさん社内研修</p>
+<p style="font-size: 20px; opacity: 0.7; margin-top: 40px;">2026年4月2日 ｜ ZOU様</p>
 
 </div>
 
