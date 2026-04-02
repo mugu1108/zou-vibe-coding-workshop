@@ -524,6 +524,6 @@ _color: #fff
 
 # では実際に体験してみましょう
 
-<p style="font-size: 24px; opacity: 0.9; margin-top: 24px;">矢野さんの営業報告アプリデモの後、<br>皆さん自身でバイブコーディングを体験します</p>
+<p style="font-size: 24px; opacity: 0.9; margin-top: 24px;">矢野さんの営業報告アプリデモの後、<br>皆さん自身でバイブコーディングを体験していただきます</p>
 
 </div>
